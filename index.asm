@@ -16,12 +16,19 @@ scrollpos = $2700 ;this is where the scrolltext will be
                   ;read from memory
 
 scrreel  = $0330 ;the scroll control
+
+address_music = $1000 ; loading address for sid tune
+sid_init = $1000      ; init routine for music
+sid_play = $1006      ; play music routine
+
 flashdat1 = $2400
 flashdat2 = $2500
 
+play_music jsr sid_play
+           rts
 *= $c000 
-
          sei
+         jsr sid_init 
 
          lda #<scrollpos ;initialise
          sta msg+1       ;the message
@@ -107,8 +114,7 @@ linemesg lda line1,x ;copy the text from
 
 int      inc $d019
 
-;this is where we read all the flashing
-;datas. 
+;this is where we read all the flashing data. 
          lda flashdat1+$00
          sta flashdat1+$50
          lda flashdat1+$80
@@ -199,7 +205,7 @@ time2    dex          ; flashing bar,
          lda #$08     ; still screen
          sta $d016    ;
 
-         jsr $1003    ;play music
+         jsr play_music
 
          lda $dc01    ;read spacebar if
          cmp #$ef     ;not pressed
@@ -269,8 +275,8 @@ control  iny       ;next message counter
 ;end!
 
 ;Insert music:
-	*= $1000-2
-	!binary "musicdata.prg"
+	*= $1000
+        !bin "resources/jeff_donald.sid",, $7c+2
 
 ;Insert 1x2 charset
 	*= $2000-2
@@ -282,12 +288,12 @@ control  iny       ;next message counter
 
 ;Insert 1-liner presentation text here
 	
-	*= $2600-2  
+	*= $2600  
         line1 !scr "   hello world      "
         line2 !scr "   1980's style     "
 
 ;Insert scrolltext data
-	*= $2700-2
+	*= $2700
         !scr "  greetings ndc sydney - do devops - "
         !scr "deliver value - be excellent to each other - "               
         !byte 0 ;SETS @  
