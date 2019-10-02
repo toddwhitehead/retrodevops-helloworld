@@ -5,7 +5,7 @@
 ; Based on the great tutorials at http://tnd64.unikat.sk/assemble_it.html
 ;=======================================
 
-; Basic loader so the demo can start when you type run
+; Basic loader so the demo can start when you type run, instead os using sys
 *= $0801                                ; BASIC start address (#2049)
 !byte $0d,$08,$dc,$07,$9e,$20,$34,$39   ; BASIC loader to start at $c000...
 !byte $31,$35,$32,$00,$00,$00           ; puts BASIC line 2012 SYS 49152
