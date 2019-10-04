@@ -21,7 +21,7 @@ The second hellowworld program is based on is based on the excellent C64 demo co
 
 1. Horizontal text scrolling
 1. Dividing the screen into multiple areas
-1. Using a custom chracter set.
+1. Using a custom chraracter set.
 
 ![Screenshot of Helloworl2 program](hello2.png "Screenshot of Helloworl1 program")
 
