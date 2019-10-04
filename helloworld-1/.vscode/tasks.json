@@ -7,7 +7,7 @@
             "label": "Assemble -> C64",
             "type": "shell",
             "windows": {
-                "command": "acme -f cbm -l labels -o build/gameloader2.prg index.asm && C:/projects/c64/vice/x64sc.exe -moncommands labels build/gameloader2.prg"
+                "command": "acme -f cbm -l build/labels -o build/helloworld1.prg index.asm && x64sc.exe -moncommands build/labels build/helloworld1.prg"
             },
             "group": "build",
             "presentation": {
@@ -28,31 +28,7 @@
             "label": "Assemble -> Compress -> C64",
             "type": "shell",
             "windows": {
-                "command": "acme -f cbm -l labels -o build/gameloader2.prg index.asm && bin\\pucrunch build/gameloader2.prg build/gameloader2.prg && C:/projects/c64/vice/x64sc.exe -moncommands labels build/gameloader2.prg",
-            },
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
-            "presentation": {
-                "clear": true
-            },
-            "problemMatcher": {
-                "owner": "acme",
-                "fileLocation": ["relative", "${workspaceFolder}"],
-                "pattern": {
-                    "regexp": "^(Error - File\\s+(.*), line (\\d+) (\\(Zone .*\\))?:\\s+(.*))$",
-                    "file": 2,
-                    "location": 3,
-                    "message": 1
-                }
-            }
-        },
-        {
-            "label": "Assemble -> Compress",
-            "type": "shell",
-            "windows": {
-                "command": "acme -f cbm -l labels -o build/gameloader2.prg index.asm && bin\\pucrunch build/gameloader2.prg build/gameloader2.prg",
+                "command": "acme -f cbm -l build/labels -o build/helloworld1.prg index.asm && bin\\pucrunch build/helloworld1.prg build/helloworld1.prg && x64sc.exe -moncommands build/labels build/helloworld1.prg",
             },
             "group": {
                 "kind": "build",

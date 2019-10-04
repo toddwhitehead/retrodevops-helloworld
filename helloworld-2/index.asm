@@ -3,6 +3,8 @@
 ; Hello World 80's Style
 ; 
 ; Based on the great tutorials at http://tnd64.unikat.sk/assemble_it.html
+; code written for the ACME Cross Assembler
+; requires installation of the VICE Emulator http://vice-emu.sourceforge.net/
 ;=======================================
 
 ; Basic loader so the demo can start when you type run, instead os using sys
@@ -288,7 +290,7 @@ control  iny       ;next message counter
 
 ;Insert 1-liner presentation text here
 	
-	*= $2600  
+	*= $2600          
         line1 !scr "   hello world      "
         line2 !scr "   1980's style     "
 
