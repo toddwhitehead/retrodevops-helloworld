@@ -37,4 +37,3 @@ The project includes 3 [Visual Studio Code][vs-code-link] build tasks:
 [vs-code-link]: https://code.visualstudio.com
 [acme-link]: https://sourceforge.net/projects/acme-crossass
 [vice-link]: http://vice-emu.sourceforge.net/
-
