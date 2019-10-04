@@ -27,7 +27,7 @@ The second hellowworld program is based on is based on the excellent C64 demo co
 
 ## See a demo
 
-If you just want to see these demos in actiob jump over to the [Retrodevops Online C64][online-c64] and use the drop down list to select one of the demo disk images and the click "Load and Play".
+If you just want to see these demos in action jump over to the [Retrodevops Online C64][online-c64] and use the drop down list to select one of the demo disk images and the click "Load and Play".
 If you don't hear any *sound* click on "Controls" and make sure sound is enabled.
 
 ![Web Based Commodore 64 emulator](helloworld-2/docs/web-emulator.png "Web Based Commodore 64 emulator")
