@@ -6,10 +6,14 @@ The code itself is based on the excellent C64 demo coding tutorials found at [ht
 
 ## See a demo
 
-If you just want to see it in action jump over to the [Retrodevops Online C64][[online-c64]] and use the drop down list to select an image that looks like "hello2-vxx.d64" and the click "Load and Play".
-If you don't hear any sound click on "Controls" and make sure sound is enabled.
+If you just want to see it in action jump over to the [Retrodevops Online C64][online-c64] and use the drop down list to select an image that looks like "hello2-vxx.d64" and the click "Load and Play".
+If you don't hear any *sound* click on "Controls" and make sure sound is enabled.
 
-![Web Based Commodore 64 emulator](docs/webemulator.png "Web Based Commodore 64 emulator")
+![Web Based Commodore 64 emulator](docs/web-emulator.png "Web Based Commodore 64 emulator")
+
+You can also see the program in action on real Commodore 64 hardware in the video below.
+
+[![Helloworld2 running on a real Commdore 64](https://img.youtube.com/vi/ZkWX2dBHeBw/0.jpg)](https://www.youtube.com/watch?v=ZkWX2dBHeBw)
 
 ## Requirements
 
