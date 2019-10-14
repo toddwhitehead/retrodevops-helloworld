@@ -1,3 +1,5 @@
+[![Build Status](https://dev.azure.com/towhit-demo/Retro%20Devops/_apis/build/status/helloworld2%20CI?branchName=master)](https://dev.azure.com/towhit-demo/Retro%20Devops/_build/latest?definitionId=27&branchName=master)
+
 # Retro Devops - Hello World 80's Style
 
 This project containes nativve Commodore 64 asembly language for a 1980's
