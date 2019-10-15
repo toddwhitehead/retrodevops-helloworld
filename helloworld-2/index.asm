@@ -296,7 +296,7 @@ control  iny       ;next message counter
 
 ;Insert scrolltext data
 	*= $2700
-        !scr "  greetings NDC sydney - do devops - "
+        !scr "  greetings ndc sydney - do devops - "
         !scr "deliver value - be excellent to each other - "               
         !byte 0 ;SETS @  
 ;END
