@@ -290,13 +290,15 @@ control  iny       ;next message counter
 
 ;Insert 1-liner presentation text here
 	
-	*= $2600          
-        line1 !scr "   hello world      "
-        line2 !scr "   1980's style     "
+	*= $2600      
+        line1 !scr "   hello world      "    
+        ;line1 !scr "   hello seattle    "
+        line2 !scr "  80's 8bit style   "
 
 ;Insert scrolltext data
 	*= $2700
-        !scr "  greetings ndc sydney - do devops - "
+        ;!scr "  greetings ndc sydney - do devops - "
+        !scr "  greetings seattle  -  do devops  - "
         !scr "deliver value - be excellent to each other - "               
         !byte 0 ;SETS @  
 
