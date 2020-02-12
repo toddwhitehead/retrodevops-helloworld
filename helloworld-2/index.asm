@@ -291,8 +291,8 @@ control  iny       ;next message counter
 ;Insert 1-liner presentation text here
 	
 	*= $2600      
-        ;line1 !scr "   hello world      "    
-        line1 !scr "   hello seattle    "
+        line1 !scr "   hello world      "    
+        ;line1 !scr "   hello seattle    "
         line2 !scr "  80s 8 bit style   "
 
 ;Insert scrolltext data
