@@ -23,7 +23,7 @@
 	plot	= $c036
 	control	= $c1b9	; ?
 	sid_init	= $1000
-	line2	= $2614	; ?
+	line2	= $2613	; ?
 	line1	= $2600	; ?
 	flashdat1	= $2400
 	flashdat2	= $2500
