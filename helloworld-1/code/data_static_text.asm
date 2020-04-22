@@ -5,4 +5,4 @@
 
 line1   !scr "     retrodevops.com presents          "
 line2   !scr "   hello world example c64 style       " 
-line3   !scr "      greetings ndc sydney             "
+line3   !scr "  greetings azure global bootcamp      "

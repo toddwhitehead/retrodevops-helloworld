@@ -297,7 +297,7 @@ control  iny       ;next message counter
 ;Insert scrolltext data
 	*= $2700
         ;!scr " greetings humans  -  do devops  - "
-        !scr "  stay safe  -  do devops  - "
+        !scr "  stay safe - do devops  - "
         !scr "deliver value - be excellent to each other - "               
         !byte 0 ;SETS @  
 
