@@ -25,8 +25,11 @@ jobs:
     # Runs a single command using the runners shell
     - name: Sent Hardcoded Event
       run: |
-        event='[ {"id": "'"$RANDOM"'", "eventType": "recordInserted", "subject": "github/hardcoded", "eventTime": "'`date +%Y-%m-%dT%H:%M:%S%z`'", "data":{ "make": "Ducati", "model": "Monster"}, "dataVersion": "1.0"} ]'
+        AUTHOR=${{ github.event.comment.user.login }}
+        event='[ {"id": "'"$RANDOM"'", "eventType": "recordInserted", "subject": "github/hardcoded", "eventTime": "'`date +%Y-%m-%dT%H:%M:%S%z`'", "data":{ "pusher": "${{pusher.name}}", "model": "Monster"}, "dataVersion": "1.0"} ]'
         curl -X POST -H "aeg-sas-key: ${{ secrets.eventgrid_key }}" -d "$event" ${{ secrets.eventgrid_endpoint }}
+        
+        AUTHOR=${{ github.event.comment.user.login }}
       
     - name: Run a one-line script
       run: echo Hello, world!
