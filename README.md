@@ -13,7 +13,7 @@ The first helloworld program is based on the excellent [Dust Layer Tutorials](ht
 1. Applies a colourwash effect to the text
 1. Play a SID music file
 
-![Screenshot of Helloworl1 program](hello1.png "Screenshot of Helloworl1 program")
+![Screenshot of Helloworl1 program](hello1.png "Screenshot of Helloworl1 program")!
 
 Reviewing the code in this project provides a good introduction to assembly coding on the Commodore 64!!
 
