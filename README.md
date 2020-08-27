@@ -21,7 +21,7 @@ Reviewing the code in this project provides a good introduction to assembly codi
 
 The second hellowworld program is based on is based on the excellent C64 demo coding tutorials found at [http://tnd64.unikat.sk](http://tnd64.unikat.sk) adds some advanced techniques including:
 
-1. Horizontal text scrolling
+1. Horizontal text scrolling!
 1. Dividing the screen into multiple areas
 1. Using a custom chraracter set.
 
