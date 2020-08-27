@@ -15,7 +15,7 @@ The first helloworld program is based on the excellent [Dust Layer Tutorials](ht
 
 ![Screenshot of Helloworl1 program](hello1.png "Screenshot of Helloworl1 program")!
 
-Reviewing the code in this project provides a good introduction to assembly coding on the Commodore 64!!
+Reviewing the code in this project provides a good introduction to assembly coding on the Commodore 64
 
 ## Helloworld 2
 
