@@ -27,9 +27,8 @@ jobs:
       run: |
         AUTHOR=${{ github.event.comment.user.login }}
         event='[ {"id": "'"$RANDOM"'", "eventType": "recordInserted", "subject": "github/hardcoded", "eventTime": "'`date +%Y-%m-%dT%H:%M:%S%z`'", "data":{ "pusher": "${{ github.event.pusher.name }}", "model": "Monster"}, "dataVersion": "1.0"} ]'
-        curl -X POST -H "aeg-sas-key: ${{ secrets.eventgrid_key }}" -d "$event" ${{ secrets.eventgrid_endpoint }}
-        
-     
+        curl -X POST -H "aeg-sas-key: ${{ secrets.eventgrid_key }}" -H "aeg-delivery-count: 1" -H "aeg-event-type: RetroDevops.Github.Push" -H "aeg-metadata-version: 1" -H "aeg-data-version: 1" -d "$event" ${{ secrets.eventgrid_endpoint }}
+ 
     - name: Run a one-line script
       run: echo Hello, world!
 
