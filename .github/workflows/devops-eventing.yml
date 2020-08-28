@@ -30,7 +30,7 @@ jobs:
         curl -X POST -H "aeg-sas-key: ${{ secrets.eventgrid_key }}" -H "aeg-delivery-count: 1" -H "aeg-event-type: RetroDevops.Github.Push" -H "aeg-metadata-version: 1" -H "aeg-data-version: 1" -d "$event" ${{ secrets.eventgrid_endpoint }}
  
     - name: Run a one-line script
-      run: echo Hello, world!
+      run: echo Hello, world!!!!
 
     # Runs a set of commands using the runners shell
     - name: Run a multi-line script
